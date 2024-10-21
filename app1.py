@@ -6,9 +6,12 @@ from PIL import Image
 
 
 st.markdown("<h1 style='text-align: center; color: #586686;'>Reconocimiento Óptico de Caracteres</h1>", unsafe_allow_html=True)
+st.subheader("***Intrucciones de manejo:***")
+st.subheader("**Paso 1:**_Captura una imagen que contenga un texto con la cámara del dispositivo._")
+st.subheader("**Paso 2:**_Si quieres aplica un filtro opcional a la imagen._")
+st.subheader("**Paso 3:**_Se mostrara el texto extraído._")
 
-
-img_file_buffer = st.camera_input("_Toma una Foto_")
+img_file_buffer = st.camera_input("_Toma una **Foto** de un texto:_")
 
 with st.sidebar:
       filtro = st.radio("_¿Quieres aplicar Filtro?_",('_Con Filtro_', '_Sin Filtro_'))
