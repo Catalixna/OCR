@@ -5,12 +5,13 @@ import pytesseract
 from PIL import Image
 
 
-st.title("Reconocimiento óptico de Caracteres")
+st.markdown("<h1 style='text-align: center; color: #586686;'>Reconocimiento Óptico de Caracteres</h1>", unsafe_allow_html=True)
 
-img_file_buffer = st.camera_input("Toma una Foto")
+
+img_file_buffer = st.camera_input("_Toma una Foto_")
 
 with st.sidebar:
-      filtro = st.radio("Aplicar Filtro",('Con Filtro', 'Sin Filtro'))
+      filtro = st.radio("_¿Quieres aplicar Filtro?_",('_Con Filtro_', '_Sin Filtro_'))
 
 
 if img_file_buffer is not None:
